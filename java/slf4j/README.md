@@ -6,14 +6,13 @@
 ## Sample slf4j configuration file
 
 ```xml
+
 <configuration>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>
-                %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
-            </Pattern>
-        </layout>
+        <encoder class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
     </appender>
 
     <logger name="com.example" level="debug" additivity="false">
@@ -22,7 +21,7 @@
 
     <logger name="ch.qos.logback" level="error">
         <appender-ref ref="CONSOLE"/>
-    ß</logger>
+    </logger>
 
     <root level="info">
         <appender-ref ref="CONSOLE"/>
