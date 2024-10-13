@@ -17,14 +17,17 @@ gradle init --type java-application  --java-version 21 --dsl groovy \
     --project-name $(basename `pwd`)
 ```
 
-# Plugins
+## Plugins
 
-## Shadow jar (fat jar)
+- Shadow jar (fat jar)
 
-Add the below gradle plugin
+  Add the below gradle plugin
+    
+  ```groovy
+  plugins {
+     id "com.github.johnrengelman.shadow" version "7.1.2"
+  }
+  ```
 
-```groovy
-plugins {
-   id "com.github.johnrengelman.shadow" version "7.1.2"
-}
-```
+- [Publish](publish)
+- [Release](release)
