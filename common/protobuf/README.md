@@ -20,7 +20,7 @@ public final class FooPb extends
         FooPbOrBuilder {
 
   // @@protoc_insertion_point(class_scope:proto.FooPb)
-  private static final com.sohoffice.security.authorization.io.AuthStatementPb DEFAULT_INSTANCE;
+  private static final com.example.FooPb DEFAULT_INSTANCE;
 
 }
 
