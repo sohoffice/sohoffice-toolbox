@@ -98,3 +98,5 @@ tasks.named('generateProto') {
     }
   }
   ```
+  
+  See [protobuf gradle plugin](https://github.com/google/protobuf-gradle-plugin/tree/master) for references.
